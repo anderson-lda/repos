@@ -90,7 +90,7 @@ export default function Main(){
                 {repositorios.map(repo=>(
                     <li key={repo.name}>
                         <span>
-                            <DeleteButton ocClick={()=>handleDelete(repo.name)}>
+                            <DeleteButton onClick={()=>handleDelete(repo.name)}>
                                 <FaTrash size={14} />
                             </DeleteButton>
                             {repo.name}
