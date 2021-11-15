@@ -74,7 +74,7 @@ export default function Repositorio({match}){
     return(
         <Container>
             <BackButton to="/">
-                <FaArrowLeft color="##000" size={30} />
+                <FaArrowLeft color="#000" size={30} />
             </BackButton>
             <Owner>
                 <img src={repositorio.owner.avatar_url} alt={repositorio.owner.login} />
@@ -84,7 +84,7 @@ export default function Repositorio({match}){
             <FilterList active={filterIndex}>
                 {filters.map((filter,index)=>(
                     <button type="button" key={filter.label}
-                    onClick={handleFilter(index)}>{filter.label}</button>
+                    onClick={()=>handleFilter(index)}>{filter.label}</button>
                 ))}
             </FilterList>
             <IssuesList>
